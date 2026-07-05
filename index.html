@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Carlino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script defer src="globe.js"></script>
+</head>
+<body>
+
+<div class="sheet">
+<div class="rule rule-left"><span class="rule-mark rule-mark--top"></span><span class="rule-mark rule-mark--bottom"></span></div>
+<div class="rule rule-right"><span class="rule-mark rule-mark--top"></span><span class="rule-mark rule-mark--bottom"></span></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Andrea Carlino</span>
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#books">Books</a>
+      <a href="#travel">Travel</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <div class="hero-media">
+        <div class="portrait">
+          <div class="portrait-inner">
+            <img src="images/main.jpg" alt="Andrea Carlino" onerror="this.parentElement.parentElement.classList.add('portrait--fallback'); this.style.display='none';">
+            <span class="portrait-initials">AC</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Leadership Profile</p>
+        <h1>Andrea Carlino</h1>
+        <p class="role">Piano · Amateur</p>
+        <p class="bio">
+          Andrea Carlino is a student at the University of Bologna, enrolled in the
+          CLEF programme (Economics and Finance).
+          He is passionate about economics and physics, and plays piano as an amateur
+          in his spare time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="details" id="interests">
+    <div class="details-inner">
+      <div class="detail-card">
+        <h3>Education</h3>
+        <p>University of Bologna — CLEF</p>
+      </div>
+      <div class="detail-card">
+        <h3>Interests</h3>
+        <p>Economics &amp; Physics</p>
+      </div>
+      <div class="detail-card">
+        <h3>Music</h3>
+        <p>Piano, amateur level</p>
+      </div>
+      <div class="detail-card">
+        <h3>Visits</h3>
+        <p>CINECA Supercomputing Centre &amp; the Leonardo supercomputer, Bologna</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="gallery-inner">
+      <p class="eyebrow">Moments</p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><div class="gallery-item-inner"><img src="images/gallery-1.jpg" alt="Andrea Carlino"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner"><img src="images/gallery-2.jpg" alt="Andrea Carlino"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner"><img src="images/gallery-3.jpg" alt="Andrea Carlino"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner"><img src="images/gallery-4.jpg" alt="Andrea Carlino"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block" id="books">
+    <div class="section-block-inner">
+      <p class="eyebrow section-title">Books I've Read</p>
+      <ul class="books-list">
+        <li><span class="book-title">Sapiens</span><span class="book-author">Yuval Noah Harari</span></li>
+        <li><span class="book-title">Homo Deus</span><span class="book-author">Yuval Noah Harari</span></li>
+        <li><span class="book-title">21 Lessons for the 21st Century</span><span class="book-author">Yuval Noah Harari</span></li>
+        <li><span class="book-title">Atomic Habits</span><span class="book-author">James Clear</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-block" id="travel">
+    <div class="section-block-inner travel-layout">
+      <div class="travel-copy">
+        <p class="eyebrow section-title">Countries Visited</p>
+        <ul class="travel-list">
+          <li>China</li>
+          <li>United States</li>
+          <li>India</li>
+          <li>United Kingdom</li>
+          <li>Ireland</li>
+          <li>Morocco</li>
+          <li>Italy</li>
+        </ul>
+      </div>
+      <div class="globe-wrap">
+        <canvas id="globe" width="360" height="360"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect" id="connect">
+    <div class="connect-inner">
+      <h2>Connect</h2>
+      <div class="connect-links">
+        <a class="connect-link" href="https://www.instagram.com/andreacarlino___?utm_source=qr" target="_blank" rel="noopener noreferrer">
+          <span class="connect-label">Instagram</span>
+          <span class="connect-arrow">&rarr;</span>
+        </a>
+        <a class="connect-link" href="https://www.linkedin.com/in/andrea-carlino-489354420/" target="_blank" rel="noopener noreferrer">
+          <span class="connect-label">LinkedIn</span>
+          <span class="connect-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 Andrea Carlino</span>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
